@@ -21,7 +21,6 @@
 |性別フラグ|sex_Flag|int(2)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
-|削除日|del_date|datetime||||
 
 ## m_pre_users
 
@@ -36,7 +35,6 @@
 |トークン|pre_user_token|varchar(255)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
-|削除日|del_date|datetime||||
 |フラグ|flag|int(1)||○||
 |変更先ユーザーID|change_user_id|int(8)||||
 
@@ -49,7 +47,6 @@
 |店経度|shop_longitude|int(6)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
-|削除日|del_date|datetime||||
 
 ## m_Tag
 
@@ -59,7 +56,6 @@
 |タグ名|Tag_name|varchar(80)|||○|
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
-|削除日|del_date|datetime||||
 
 ## t_shopExplanation
 
@@ -73,4 +69,3 @@
 |更新日|up_date|datetime||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
-|削除日|del_date|datetime||||
