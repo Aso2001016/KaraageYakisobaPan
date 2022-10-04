@@ -23,6 +23,23 @@
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
 
+## m_pre_users
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|ユーザーID|pre_user_id|int(8)|○|○||
+|ユーザー名|pre_user_name|varchar(20)||○||
+|メールアドレス|pre_user_mail|varchar(100)||○||
+|パスワード|pre_user_pass|varchar(255)||○||
+|年代|pre_age|int(3)||○||
+|性別フラグ|pre_sex_flag|int(2)||○||
+|トークン|pre_user_token|varchar(255)||○||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
+|フラグ|flag|int(1)||○||
+|変更先ユーザーID|change_user_id|int(8)||||
+
 ## m_shop
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
