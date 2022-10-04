@@ -51,16 +51,6 @@
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
 
-## m_shopTag
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|店ID|shop_id|int(8)|○|○||
-|タグID|shopCategory_id|int(8)|○|○||
-|登録日|reg_date|datetime||○||
-|更新日|upd_date|datetime||||
-|削除日|del_date|datetime||||
-
 ## m_Tag
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
