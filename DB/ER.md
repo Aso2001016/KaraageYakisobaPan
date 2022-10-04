@@ -29,5 +29,5 @@ package "Gohunt" as target_system {
         upd_date
         del_date
     }
-    @enduml
-    ```
+@enduml
+```
