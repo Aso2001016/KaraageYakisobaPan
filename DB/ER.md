@@ -29,5 +29,28 @@ package "Gohunt" as target_system {
         upd_date
         del_date
     }
+    
+    entity "プレユーザーマスタ" as pre_users  <m_pre_users> <<M,MASTER_MARK_COLOR>> {
+        + pre_user_id[PK]
+        --
+        pre_user_mail
+        pre_user_token
+        reg_date
+        upd_date
+        del_date
+    }
+    
+    entity "ショップマスタ" as m_shop  <m_shop> <<M,MASTER_MARK_COLOR>> {
+        +shop_id[PK]
+        --
+        shop_id
+        user_id
+        shop_latitude
+        shop_longitude
+        shop_address
+        reg_date
+        upd_date
+        del_date
+    }
 @enduml
 ```
