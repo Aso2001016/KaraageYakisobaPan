@@ -69,20 +69,6 @@
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
 
-## t_bulletinBoardComment
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|掲示板ID|bulletinBoard_id|int(8)|○|○|○|
-|コメントID|comment_id|int(8)|○|○|○|
-|ユーザーID|user_id|int(8)||○|○|
-|コメント|comment|varchar(200)||○||
-|コメント先ID|commentDestination_id|int(8)||||
-|いいね(参考になった)|good_count|int(8)||○||
-|登録日|reg_date|datetime||○||
-|更新日|upd_date|datetime||||
-|削除日|del_date|datetime||||
-
 ## t_RecruitmentBulletinBoard
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
