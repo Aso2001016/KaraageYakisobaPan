@@ -67,7 +67,7 @@
 |更新日|up_date|datetime||○||
 |登録日|reg_date|datetime||○||
 
-## t_shopExplanation
+## t_shopExplanationHistory
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
