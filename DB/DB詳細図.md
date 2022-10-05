@@ -59,6 +59,7 @@
 |店ID|shop_id|int(8)|○|○||
 |店名|shop_name|varchar(100)||○||
 |店説明|shop_explanation|varchar(200)||○||
+|画像ID|shop_image_ID|varchar(80)||○|○|
 |店画像|shop_image|varchar(80)||○||
 |タグID|tag_id|varchar(80)||○|○|
 |最終変更ユーザーID|user_id|int(8)||○||
@@ -70,6 +71,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |店ID|shop_id|int(8)|○|○||
+|画像ID|shop_image_ID|varchar(80)|○|○|○|
 |店画像|shop_image|varchar(80)||○||
 |最終変更ユーザーID|user_id|int(8)||○||
 |更新日|up_date|datetime||○||
