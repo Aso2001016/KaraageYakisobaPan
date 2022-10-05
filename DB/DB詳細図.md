@@ -67,7 +67,7 @@
 |店名|shop_name|varchar(100)||○||
 |店説明|shop_explanation|varchar(200)||○||
 |店画像|shop_image|varchar(80)||○||
-|タグID|shop_tag|varchar(80)|||○|
+|タグID|shop_tag|varchar(80)||○|○|
 |最終変更ユーザーID|user_id|int(8)||○||
 |更新日|up_date|datetime||○||
 |登録日|reg_date|datetime||○||
