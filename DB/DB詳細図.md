@@ -54,8 +54,8 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|タグID|Tag_id|int(8)|○|○||
-|タグ名|Tag_name|varchar(80)|||○|
+|タグID|tag_id|int(8)|○|○||
+|タグ名|tag_name|varchar(80)|||○|
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 
