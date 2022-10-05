@@ -27,7 +27,6 @@ package "Gohunt" as target_system {
         sex_Flag
         reg_date
         upd_date
-        del_date
     }
     
     entity "プレユーザーマスタ" as pre_users  <m_pre_users> <<M,MASTER_MARK_COLOR>> {
@@ -37,7 +36,6 @@ package "Gohunt" as target_system {
         pre_user_token
         reg_date
         upd_date
-        del_date
     }
     
     entity "ショップマスタ" as m_shop  <m_shop> <<M,MASTER_MARK_COLOR>> {
@@ -50,7 +48,25 @@ package "Gohunt" as target_system {
         shop_address
         reg_date
         upd_date
-        del_date
+    }
+    
+    entity "タグマスタ" as m_tag  <m_tag> <<M,MASTER_MARK_COLOR>> {
+        +tag_id[PK]
+        --
+        tag_name
+        reg_date
+        upd_date
+    }
+    
+    entity "ショップExpテーブル" as t_shopExplanation <t_shopExplanation> <<M,MASTER_MARK_COLOR>> {
+        +shop_id[PK]
+        --
+        shop_name
+        shop_explanation
+        shop_image
+        # tag_id [FK]
+        reg_date
+        upd_date
     }
 @enduml
 ```
