@@ -79,10 +79,12 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "タグマスタ" as m_tag  <m_tag> <<M,MASTER_MARK_COLOR>> {
-        +tag_id[PK]
+    entity "ショップ画面テーブル" as t_shopImage <t_shopImage> <<T,TRANSACTION_MARK_COLOR>> {
+        +shop_id[PK]
+        +shop_image_ID [FK]
         --
-        tag_name
+        shop_image
+        # user_id [FK]
         reg_date
         upd_date
     }
