@@ -58,7 +58,7 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "ショップExpテーブル" as t_shopExplanation <t_shopExplanation> <<M,MASTER_MARK_COLOR>> {
+    entity "ショップExpテーブル" as t_shopExplanation <t_shopExplanation> <<T,TRANSACTION_MARK_COLOR>> {
         +shop_id[PK]
         --
         shop_name
