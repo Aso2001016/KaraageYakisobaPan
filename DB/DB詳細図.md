@@ -22,23 +22,17 @@
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 
-## m_pre_users
+## m_shop
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|ユーザーID|pre_user_id|int(8)|○|○||
-|ユーザー名|pre_user_name|varchar(20)||○||
-|メールアドレス|pre_user_mail|varchar(100)||○||
-|パスワード|pre_user_pass|varchar(255)||○||
-|年代|pre_age|int(3)||○||
-|性別フラグ|pre_sex_flag|int(2)||○||
-|トークン|pre_user_token|varchar(255)||○||
+|店ID|shop_id|int(8)|○|○||
+|店名|shop_name|varchar(100)||○||
+|登録ユーザーID|user_id|int(8)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
-|フラグ|flag|int(1)||○||
-|変更先ユーザーID|change_user_id|int(8)||||
 
-## m_shop
+## m_shopAddress
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
@@ -46,7 +40,6 @@
 |店緯度|shop_latitude|int(6)||○||
 |店経度|shop_longitude|int(6)||○||
 |店住所|shop_address|varchar(200)||○|○|
-|登録ユーザーID|user_id|int(8)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 
@@ -69,5 +62,15 @@
 |店画像|shop_image|varchar(80)||○||
 |タグID|tag_id|varchar(80)||○|○|
 |最終変更ユーザーID|user_id|int(8)||○||
+|更新日|up_date|datetime||○||
+|登録日|reg_date|datetime||○||
+
+## t_searchHistory
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|ユーザーID|user_id|int(8)|○|○|○|
+|検索履歴ID|searchHistory_id|int(8)|○|○||
+|検索ワード|searchWord|varchar(200)||○||
 |更新日|up_date|datetime||○||
 |登録日|reg_date|datetime||○||
