@@ -37,6 +37,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |店ID|shop_id|int(8)|○|○||
+|住所ID|shop_address_ID|varchar(80)|○|○||
 |店緯度|shop_latitude|int(6)||○||
 |店経度|shop_longitude|int(6)||○||
 |店住所|shop_address|varchar(200)||○|○|
@@ -62,6 +63,7 @@
 |店評価|shop_evaluation|int(5)||○||
 |画像ID|shop_image_ID|varchar(80)||○|○|
 |店画像|shop_image|varchar(80)||○||
+|住所ID|shop_address_ID|varchar(80)||○|○|
 |タグID|tag_id|varchar(80)||○|○|
 |最終変更ユーザーID|user_id|int(8)||○|○|
 |更新日|up_date|datetime||○||
