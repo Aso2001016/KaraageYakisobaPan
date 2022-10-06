@@ -91,6 +91,13 @@ package "Gohunt" as target_system {
    }
   
   users     }--{      shopExplanation
+  shopExplanationHistory     }--{      shopExplanation
+  shopImage     }--{      shopExplanation
+  tag     }--{      shopExplanation
+  shop     }--{      shopExplanation
+  shopExplanationHistory     }--{      users
+  shopImage     }--{      users
+  shop     }--{      users
   
 @enduml
 ```
