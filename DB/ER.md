@@ -102,6 +102,7 @@ package "Gohunt" as target_system {
   shopExplanation     }--{      shopAddress
   shop     }--{      shopImage
   shop     }--{      shopAddress
+  shop     }--{      shopExplanationHistory
   
 @enduml
 ```
