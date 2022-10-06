@@ -90,7 +90,7 @@ package "Gohunt" as target_system {
     }
    }
   
-  users     }o--o{      shopExplanation
+  users     }--{      shopExplanation
   
 @enduml
 ```
