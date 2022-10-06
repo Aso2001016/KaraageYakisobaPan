@@ -100,6 +100,8 @@ package "Gohunt" as target_system {
   shopImage     }--{      users
   shop     }--{      users
   shopExplanation     }--{      shopAddress
+  shop     }--{      shopImage
+  shop     }--{      shopAddress
   
 @enduml
 ```
