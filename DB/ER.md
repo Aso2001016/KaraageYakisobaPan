@@ -99,7 +99,7 @@ package "Gohunt" as target_system {
   shopExplanationHistory     }--{      users
   shopImage     }--{      users
   shop     }--{      users
-  shop     }--{      shopAddress
+  shopExplanation     }--{      shopAddress
   
 @enduml
 ```
