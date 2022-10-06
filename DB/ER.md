@@ -28,7 +28,7 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "ショップアドレスマスタ" as m_shopAddress  <m_shopAddress> <<M,MASTER_MARK_COLOR>> {
+    entity "ショップアドレスマスタ" as shopAddress  <m_shopAddress> <<M,MASTER_MARK_COLOR>> {
         +shop_id[PK]
         --
         shop_latitude
@@ -38,7 +38,7 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "ショップマスタ" as m_shop  <m_shop> <<M,MASTER_MARK_COLOR>> {
+    entity "ショップマスタ" as shop  <m_shop> <<M,MASTER_MARK_COLOR>> {
         +shop_id[PK]
         --
         shop_name
@@ -47,7 +47,7 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "タグマスタ" as m_tag  <m_tag> <<M,MASTER_MARK_COLOR>> {
+    entity "タグマスタ" as tag  <m_tag> <<M,MASTER_MARK_COLOR>> {
         +tag_id[PK]
         --
         tag_name
@@ -55,7 +55,7 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "ショップ説明テーブル" as t_shopExplanation <t_shopExplanation> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "ショップ説明テーブル" as shopExplanation <t_shopExplanation> <<T,TRANSACTION_MARK_COLOR>> {
         +shop_id[PK]
         --
         shop_name
@@ -69,7 +69,7 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "ショップ説明履歴テーブル" as t_shopExplanationHistory <t_shopExplanationHistiry> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "ショップ説明履歴テーブル" as shopExplanationHistory <t_shopExplanationHistiry> <<T,TRANSACTION_MARK_COLOR>> {
         +shop_id[PK]
         +shop_explanation_ID [FK]
         --
@@ -79,7 +79,7 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "ショップ画面テーブル" as t_shopImage <t_shopImage> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "ショップ画面テーブル" as shopImage <t_shopImage> <<T,TRANSACTION_MARK_COLOR>> {
         +shop_id[PK]
         +shop_image_ID [FK]
         --
@@ -88,5 +88,9 @@ package "Gohunt" as target_system {
         reg_date
         upd_date
     }
+   }
+  
+  users     }o--o{      shopExplanation
+  
 @enduml
 ```
