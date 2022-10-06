@@ -30,6 +30,7 @@ package "Gohunt" as target_system {
     
     entity "ショップアドレスマスタ" as shopAddress  <m_shopAddress> <<M,MASTER_MARK_COLOR>> {
         +shop_id[PK]
+        +shop_address_ID[PK]
         --
         shop_latitude
         shop_longitude
