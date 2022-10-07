@@ -1,1 +1,1 @@
-# KaraageYakisobaPan
+#　画面詳細進捗
