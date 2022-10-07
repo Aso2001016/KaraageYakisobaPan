@@ -28,16 +28,37 @@
 |---|-----|--|--|--|--|
 |店ID|shop_id|int(8)|○|○||
 |店名|shop_name|varchar(100)||○||
+|店評価ID|shop_evaluation_id|int(5)||○||
 |登録ユーザーID|user_id|int(8)||○|○|
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
+
+## m_shopEvaluation
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|店ID|shop_id|int(8)|○|○||
+|店評価ID|shop_evaluation_id|int(8)||○||
+|店評価|shop_evaluation|int(5)||○||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|店ID|shop_id|int(8)|○|○||
+|店評価ID|shop_evaluation_id|int(5)||○||
+|登録ユーザーID|user_id|int(8)||○|○|
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+
 
 ## m_shopAddress
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |店ID|shop_id|int(8)|○|○||
-|住所ID|shop_address_ID|varchar(80)|○|○||
+|住所ID|shop_address_id|varchar(80)|○|○||
 |店緯度|shop_latitude|int(6)||○||
 |店経度|shop_longitude|int(6)||○||
 |店住所|shop_address|varchar(200)||○|○|
@@ -57,14 +78,13 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|店ID|shop_id|int(8)|○|○||
+|店ID|shop_id|int(8)||○|○|
 |店説明ID|shop_explanation_ID|int(8)||○|○|
 |店説明|shop_explanation|varchar(200)||○||
-|店評価|shop_evaluation|int(5)||○||
-|画像ID|shop_image_ID|varchar(80)||○|○|
+|画像ID|shop_image_ID|int(8)||○|○|
 |店画像|shop_image|varchar(80)||○||
-|住所ID|shop_address_ID|varchar(80)||○|○|
-|タグID|tag_id|varchar(80)||○|○|
+|住所ID|shop_address_ID|int(8)||○|○|
+|タグID|tag_id|int(8)||○|○|
 |最終変更ユーザーID|user_id|int(8)||○|○|
 |更新日|up_date|datetime||○||
 |登録日|reg_date|datetime||○||
