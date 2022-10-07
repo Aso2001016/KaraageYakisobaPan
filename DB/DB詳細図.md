@@ -38,7 +38,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |店ID|shop_id|int(8)|○|○||
-|店評価ID|shop_evaluation_id|int(8)||○||
+|店評価ID|shop_evaluation_id|int(8)||○|○|
 |店評価|shop_evaluation|int(5)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
