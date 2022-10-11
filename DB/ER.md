@@ -71,7 +71,7 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "ショップ説明履歴テーブル" as shopExplanationHistory <m_shopExplanationHistiry> <<M,MASTER_MARK_COLOR>> {
+    entity "ショップ説明履歴マスタ" as shopExplanationHistory <m_shopExplanationHistiry> <<M,MASTER_MARK_COLOR>> {
         +shop_id[PK]
         +shop_explanation_ID [FK]
         --
