@@ -81,7 +81,7 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "ショップ画面テーブル" as shopImage <t_shopImage> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "ショップ画面マスタ" as shopImage <m_shopImage> <<M,TRANSACTION_MARK_COLOR>> {
         +shop_id[PK]
         +shop_image_ID [FK]
         --
@@ -93,7 +93,7 @@ package "Gohunt" as target_system {
     
     entity "ショップ評価テーブル" as shopEvaluation <m_shopEvaluation> <<M,TRANSACTION_MARK_COLOR>> {
         +shop_id[PK]
-        +shop_Evaluation_ID [FK]
+        +shop_Evaluation_ID [PK]
         --
         shop_evaluation
         # user_id [FK]
