@@ -62,9 +62,10 @@ package "Gohunt" as target_system {
         shop_name
         # shop_explanation_ID [FK]
         shop_explanation
+        # shop_address_ID [FK]
         # shop_image_ID [FK]
-        shop_image
         # tag_id [FK]
+        #shop_shopEvaluation_id [FK]
         # user_id [FK]
         reg_date
         upd_date
@@ -89,6 +90,17 @@ package "Gohunt" as target_system {
         reg_date
         upd_date
     }
+    
+    entity "ショップ評価テーブル" as shopEvaluation <m_shopEvaluation> <<M,TRANSACTION_MARK_COLOR>> {
+        +shop_id[PK]
+        +shop_Evaluation_ID [FK]
+        --
+        shop_evaluation
+        # user_id [FK]
+        reg_date
+        upd_date
+    }
+    
    }
   
   users     }--{      shopExplanation
