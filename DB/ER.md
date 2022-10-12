@@ -30,7 +30,7 @@ package "Gohunt" as target_system {
     
     entity "ショップアドレスマスタ" as shopAddress  <m_shopAddress> <<M,MASTER_MARK_COLOR>> {
         +shop_id[PK]
-        +shop_address_ID[PK]
+        +shop_address_id[PK]
         --
         shop_latitude
         shop_longitude
@@ -58,7 +58,7 @@ package "Gohunt" as target_system {
     
     entity "ショップ説明テーブル" as shopExplanation <t_shopExplanation> <<T,TRANSACTION_MARK_COLOR>> {
         +shop_id[PK]
-        +shop_explanation_ID [PK]
+        +shop_explanation_id [PK]
         --
         shop_name
         shop_explanation
@@ -72,7 +72,7 @@ package "Gohunt" as target_system {
     
     entity "ショップ説明履歴マスタ" as shopExplanationHistory <m_shopExplanationHistiry> <<M,MASTER_MARK_COLOR>> {
         +shop_id[PK]
-        +shop_explanation_ID [FK]
+        +shop_explanation_id [FK]
         --
         shop_name
         shop_explanation
@@ -86,7 +86,7 @@ package "Gohunt" as target_system {
     
     entity "ショップ画面マスタ" as shopImage <m_shopImage> <<M,MASTER_MARK_COLOR>> {
         +shop_id[PK]
-        +shop_image_ID [FK]
+        +shop_image_id [FK]
         --
         shop_image
         # user_id [FK]
