@@ -75,10 +75,14 @@ package "Gohunt" as target_system {
         +shop_id[PK]
         +shop_explanation_ID [FK]
         --
+        shop_name
         shop_explanation
+        # shop_address_ID [FK]
+        # shop_image_ID [FK]
+        # tag_id [FK]
+        #shop_shopEvaluation_id [FK]
         # user_id [FK]
-        reg_date
-        upd_date
+        change_date
     }
     
     entity "ショップ画面マスタ" as shopImage <m_shopImage> <<M,MASTER_MARK_COLOR>> {
