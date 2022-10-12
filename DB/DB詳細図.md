@@ -77,8 +77,8 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|店ID|shop_id|int(8)|○|○||
 |店説明ID|shop_explanation_ID|int(8)|○|○||
+|店ID|shop_id|int(8)||○|○|
 |店説明|shop_explanation|varchar(200)||○||
 |画像ID|shop_image_ID|int(8)||○|○|
 |住所ID|shop_address_ID|int(8)||○|○|
@@ -91,8 +91,8 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|店ID|shop_id|int(8)|○|○||
 |店説明ID|shop_explanation_ID|int(8)|○|○||
+|店ID|shop_id|int(8)||○|○|
 |店説明|shop_explanation|varchar(200)||○||
 |画像ID|shop_image_ID|int(8)||○|○|
 |住所ID|shop_address_ID|int(8)||○|○|
