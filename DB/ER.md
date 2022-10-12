@@ -60,7 +60,6 @@ package "Gohunt" as target_system {
         +shop_id[PK]
         +shop_explanation_id [PK]
         --
-        shop_name
         shop_explanation
         # shop_address_ID [FK]
         # shop_image_ID [FK]
@@ -74,7 +73,6 @@ package "Gohunt" as target_system {
         +shop_id[PK]
         +shop_explanation_id [FK]
         --
-        shop_name
         shop_explanation
         # shop_address_ID [FK]
         # shop_image_ID [FK]
