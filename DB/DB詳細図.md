@@ -32,14 +32,12 @@
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 
-## m_shopEvaluation
+## t_shopEvaluation
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |店ID|shop_id|int(8)|○|○||
-|店評価ID|shop_shopEvaluation_id|int(8)|○|○||
 |店評価|shop_evaluation|int(5)||○||
-|ユーザーID|user_id|int(8)||○|○|
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 
