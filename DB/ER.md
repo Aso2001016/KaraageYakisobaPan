@@ -96,10 +96,8 @@ package "Gohunt" as target_system {
     
     entity "ショップ評価マスタ" as shopEvaluation <m_shopEvaluation> <<M,MASTER_MARK_COLOR>> {
         +shop_id[PK]
-        +shop_Evaluation_ID [PK]
         --
         shop_evaluation
-        # user_id [FK]
         reg_date
         upd_date
     }
