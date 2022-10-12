@@ -116,7 +116,7 @@ package "Gohunt" as target_system {
   shop     }--{      shopAddress
   shop     }--{      shopExplanationHistory
   shopEvaluation    }--{    shopExplanation
-  shopEvaluation    }--{    
+  shopEvaluation    }--{    users
   
   
 @enduml
