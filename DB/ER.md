@@ -65,7 +65,6 @@ package "Gohunt" as target_system {
         # shop_address_ID [FK]
         # shop_image_ID [FK]
         # tag_id [FK]
-        #shop_shopEvaluation_id [FK]
         # user_id [FK]
         reg_date
         upd_date
