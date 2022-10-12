@@ -58,9 +58,9 @@ package "Gohunt" as target_system {
     
     entity "ショップ説明テーブル" as shopExplanation <t_shopExplanation> <<T,TRANSACTION_MARK_COLOR>> {
         +shop_id[PK]
+        +shop_explanation_ID [PK]
         --
         shop_name
-        # shop_explanation_ID [FK]
         shop_explanation
         # shop_address_ID [FK]
         # shop_image_ID [FK]
