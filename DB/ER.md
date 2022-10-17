@@ -43,6 +43,7 @@ package "Gohunt" as target_system {
         +shop_id[PK]
         --
         shop_name
+        shop_name_rubi
         # user_id [FK]
         reg_date
         upd_date
@@ -83,7 +84,7 @@ package "Gohunt" as target_system {
     
     entity "ショップ画面マスタ" as shopImage <m_shopImage> <<M,MASTER_MARK_COLOR>> {
         +shop_id[PK]
-        +shop_image_id [FK]
+        +shop_image_id [PK]
         --
         shop_image
         # user_id [FK]
@@ -91,10 +92,13 @@ package "Gohunt" as target_system {
         upd_date
     }
     
-    entity "ショップ評価テーブル" as shopEvaluation <t_shopEvaluation> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "ショップ評価マスタ" as shopEvaluation <m_shopEvaluation> <<M,MASTER_MARK_COLOR>> {
         +shop_id[PK]
+        +shop_evaluation_id[PK]
         --
-        shop_evaluation
+        shop_Appearance_evaluation
+        shop_atmosphere_evaluation
+        shop_taste_evaluation
         reg_date
         upd_date
     }
