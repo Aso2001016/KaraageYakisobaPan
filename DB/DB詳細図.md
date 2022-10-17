@@ -28,6 +28,7 @@
 |---|-----|--|--|--|--|
 |店ID|shop_id|int(8)|○|○||
 |店名|shop_name|varchar(100)||○||
+|店名よみがな|shop_name_rubi|varchar(100)||○||
 |登録ユーザーID|user_id|int(8)||○|○|
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
